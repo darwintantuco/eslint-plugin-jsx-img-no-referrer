@@ -1,9 +1,5 @@
 "use strict";
 
-// ------------------------------------------------------------------------------
-// Requirements
-// ------------------------------------------------------------------------------
-
 const RuleTester = require("eslint").RuleTester;
 const rule = require("../../../lib/rules/jsx-img-no-referrer");
 
@@ -14,10 +10,6 @@ const parserOptions = {
     jsx: true,
   },
 };
-
-// ------------------------------------------------------------------------------
-// Tests
-// ------------------------------------------------------------------------------
 
 const ruleTester = new RuleTester({ parserOptions });
 const defaultErrors = [

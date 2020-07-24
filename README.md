@@ -33,7 +33,7 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
   "rules": {
-    "jsx-img-no-referrer/jsx-img-no-referrer": 2
+    "jsx-img-no-referrer/jsx-img-no-referrer": "error"
   }
 }
 ```
