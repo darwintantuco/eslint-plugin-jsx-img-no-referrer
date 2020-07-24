@@ -1,6 +1,6 @@
 # eslint-plugin-jsx-img-no-referrer
 
-Forbid img with external source without Referrer-Policy: no-referrer
+Using img tag with external source must have referrerPolicy="no-referrer"
 
 ## Installation
 
@@ -36,6 +36,18 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
-## Supported Rules
+### Custom image components
 
-- Fill in provided rules here
+```json
+{
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "imgComponents": [
+      "Image",
+      { "name": "Gravatar", "imgAttribute": "imageSrc" }
+    ]
+  }
+}
+```
