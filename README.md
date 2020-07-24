@@ -46,9 +46,9 @@ Then configure the rules you want to use under the rules section.
     "react": {
       "version": "detect"
     },
-    "imgComponents": [
+    "imageComponents": [
       "Image",
-      { "name": "Gravatar", "imgAttribute": "imageSrc" }
+      { "name": "Gravatar", "imageAttribute": "imageSrc" }
     ]
   }
 }
