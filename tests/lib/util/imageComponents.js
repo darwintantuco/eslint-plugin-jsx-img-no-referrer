@@ -1,39 +1,39 @@
-"use strict";
+'use strict'
 
-const assert = require("assert");
-const imageComponentsUtil = require("../../../lib/util/imageComponents");
+const assert = require('assert')
+const imageComponentsUtil = require('../../../lib/util/imageComponents')
 
-describe("imageComponentsFunctions", () => {
-  describe("getImageComponents", () => {
-    it("returns a default map of components", () => {
-      const context = {};
+describe('imageComponentsFunctions', () => {
+  describe('getImageComponents', () => {
+    it('returns a default map of components', () => {
+      const context = {}
       assert.deepStrictEqual(
         imageComponentsUtil.getImageComponents(context),
-        new Map([["img", "src"]])
-      );
-    });
+        new Map([['img', 'src']])
+      )
+    })
 
-    it("returns a map of components", () => {
+    it('returns a map of components', () => {
       const imageComponents = [
-        "Image",
+        'Image',
         {
-          name: "Gravatar",
-          imageAttribute: "imageSrc",
+          name: 'Gravatar',
+          imageAttribute: 'imageSrc',
         },
-      ];
+      ]
       const context = {
         settings: {
           imageComponents,
         },
-      };
+      }
       assert.deepStrictEqual(
         imageComponentsUtil.getImageComponents(context),
         new Map([
-          ["img", "src"],
-          ["Image", "src"],
-          ["Gravatar", "imageSrc"],
+          ['img', 'src'],
+          ['Image', 'src'],
+          ['Gravatar', 'imageSrc'],
         ])
-      );
-    });
-  });
-});
+      )
+    })
+  })
+})
