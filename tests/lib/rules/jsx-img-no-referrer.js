@@ -39,5 +39,16 @@ ruleTester.run("jsx-img-no-referrer", rule, {
       code: `<img src='${externalSrc}'/>`,
       errors: defaultErrors,
     },
+    {
+      code: `
+        <img
+          src='${externalSrc}'
+          alt="Awesome image"
+          height="620px"
+          width="480px"
+        />
+      `,
+      errors: defaultErrors,
+    },
   ],
 });
