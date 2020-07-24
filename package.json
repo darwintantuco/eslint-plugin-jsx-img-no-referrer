@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-jsx-img-no-referrer",
-  "version": "0.0.0",
-  "description": "Forbid img with external source without Referrer-Policy: no-referrer",
+  "version": "0.0.1",
+  "description": "Using img tag with external source must have referrerPolicy='no-referrer'",
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -22,5 +22,5 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "ISC"
+  "license": "MIT"
 }
