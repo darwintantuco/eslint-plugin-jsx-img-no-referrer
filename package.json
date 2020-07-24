@@ -7,7 +7,7 @@
     "eslintplugin",
     "eslint-plugin"
   ],
-  "author": "Darwin Tantuco",
+  "author": "Darwin Christopher Tantuco <dcrtantuco@gmail.com>",
   "main": "lib/index.js",
   "prettier": "@darwintantuco/prettier-config",
   "scripts": {
@@ -34,5 +34,10 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/darwintantuco/eslint-plugin-jsx-img-no-referrer",
+  "bugs": {
+    "url": "https://github.com/darwintantuco/eslint-plugin-jsx-img-no-referrer/issues"
+  },
+  "repository": "git@github.com:darwintantuco/eslint-plugin-jsx-img-no-referrer.git"
 }
