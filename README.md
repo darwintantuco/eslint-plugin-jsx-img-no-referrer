@@ -16,35 +16,26 @@ Next, install `eslint-plugin-jsx-img-no-referrer`:
 $ npm install eslint-plugin-jsx-img-no-referrer --save-dev
 ```
 
-
 ## Usage
 
 Add `jsx-img-no-referrer` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
-    "plugins": [
-        "jsx-img-no-referrer"
-    ]
+  "plugins": ["jsx-img-no-referrer"]
 }
 ```
-
 
 Then configure the rules you want to use under the rules section.
 
 ```json
 {
-    "rules": {
-        "jsx-img-no-referrer/rule-name": 2
-    }
+  "rules": {
+    "jsx-img-no-referrer/jsx-img-no-referrer": 2
+  }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
-
-
-
-
-
+- Fill in provided rules here
