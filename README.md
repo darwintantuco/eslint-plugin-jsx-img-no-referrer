@@ -1,5 +1,7 @@
 # eslint-plugin-jsx-img-no-referrer
 
+![Node.js CI](https://github.com/darwintantuco/eslint-plugin-jsx-img-no-referrer/workflows/Node.js%20CI/badge.svg)
+
 Using img tag with external source must have referrerPolicy="no-referrer"
 
 ## Installation
