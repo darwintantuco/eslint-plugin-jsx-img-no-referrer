@@ -8,14 +8,18 @@ Using img tag with external source must have referrerPolicy="no-referrer"
 
 You'll first need to install [ESLint](http://eslint.org):
 
-```
-$ npm i eslint --save-dev
-```
-
 Next, install `eslint-plugin-jsx-img-no-referrer`:
+
+### npm
 
 ```
 $ npm install eslint-plugin-jsx-img-no-referrer --save-dev
+```
+
+### yarn
+
+```
+$ yarn add eslint-plugin-jsx-img-no-referrer --dev
 ```
 
 ## Usage
@@ -38,17 +42,14 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
-### Custom image components
+If you have custom image components, you can define them under settings section.
 
 ```json
 {
   "settings": {
-    "react": {
-      "version": "detect"
-    },
     "imageComponents": [
-      "Image",
-      { "name": "Gravatar", "imageAttribute": "imageSrc" }
+      "Avatar",
+      { "name": "Profile", "imageAttribute": "imageSrc" }
     ]
   }
 }
